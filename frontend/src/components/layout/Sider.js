@@ -9,7 +9,6 @@ import {
   Typography,
   Paper,
 } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import GroupIcon from "@mui/icons-material/Group";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";

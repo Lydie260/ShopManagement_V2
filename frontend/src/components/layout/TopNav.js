@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -26,7 +25,7 @@ export default function AccountMenu() {
     <React.Fragment>
       <Card sx={{minHeight:"3rem", display: 'flex', alignItems: 'center', textAlign: 'center',justifyContent: 'end',paddingRight:"5rem"}}>
 
-        <Typography sx={{ minWidth: 100 }}><b>Admin</b> ~ Yamu Benjamin</Typography>
+        <Typography sx={{ minWidth: 100 }}><b>Admin</b> ~ Lydie M</Typography>
         <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
