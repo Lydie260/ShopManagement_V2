@@ -4,11 +4,12 @@ import { checkUser, loginUser } from "../middleware/checkUserExist";
 import { verifyUserToken } from "../middleware/verifyToken";
 const route = Router();
 route.post("/login", loginUser);
-route.use(verifyUserToken);
 route
   .route("/")
   .post(checkUser, UserController.createController)
   .get(UserController.getAllController);
+  route.use(verifyUserToken);
+
 
 route
   .route("/:id")
