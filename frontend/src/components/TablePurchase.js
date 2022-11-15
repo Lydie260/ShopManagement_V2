@@ -15,14 +15,14 @@ export default function BasicTable(props) {
         <TableHead>
           <TableRow>
             <TableCell>No</TableCell>
-            {props.tableData.map((data) =>(
+            {props?.tableData?.map((data) =>(
               <TableCell> {data.title}</TableCell>
             ))}
           
           </TableRow>
         </TableHead>
         <TableBody>
-        {props.items.map((row, index) =>(
+        {props?.items?.map((row, index) =>(
           <TableRow
           key={row.name}
           sx={{"&:last-child td, &:last-child th":{ border: 0}}}
@@ -30,7 +30,7 @@ export default function BasicTable(props) {
             <TableCell component="th" scope="row">
               {index + 1}
              </TableCell>
-             {props.tableData.map((data, index) =>(  <TableCell align="left">{row[data.name]}</TableCell>
+             {props?.tableData?.map((data, index) =>(  <TableCell align="left">{row[data.name]}</TableCell>
              ))}
 
  </TableRow>
