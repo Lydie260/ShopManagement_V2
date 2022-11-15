@@ -5,8 +5,8 @@ import {getAllPurchaseAction} from "../redux/purchase/actions";
 const tableData =[
     {title: "Quantity", name: "quantity"},
     {title: "Price", name: "price"},
-    {title:"user", name:"user"},
-    {title:"product", name:"product"},
+    {title:"user", name:"User"},
+    {title:"product", name:"Product"},
 ];
 const ViewComponent = (props)=>{
     const dispatch = useDispatch();
